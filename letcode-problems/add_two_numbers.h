@@ -12,47 +12,9 @@
 #include <iostream>
 #include <vector>
 
+#include "list_node.h"
+
 //https://leetcode.com/problems/add-two-numbers
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-struct ListNode {
-  int val;
-  ListNode *next;
-  ListNode() : val(0), next(nullptr) {}
-  ListNode(int x) : val(x), next(nullptr) {}
-  ListNode(int x, ListNode *next) : val(x), next(next) {}
-    
-  ListNode(std::vector<int> elements) {
-    this->val = elements.front();
-    ListNode* cur = this;
-    int i = 1;
-    while(i < elements.size()) {
-      ListNode *next = new ListNode();
-      next->val = elements[i];
-      cur->next = next;
-      cur = next;
-      i++;
-    }
-  }
-
-  void dump() {
-    auto l = this;
-    while (l) {
-      std::cout << l->val;
-      l = l->next;
-    }
-    std::cout << std::endl;
-  }
-};
 
 class AddTwoNnumbers {
 private:
@@ -112,7 +74,8 @@ public:
     ListNode* list1 = new ListNode(l1);
     ListNode* list2 = new ListNode(l2);
     
-    return addTwoNumbers(list1, list2);
+    auto result = addTwoNumbers(list1, list2);
+    return result;
   }
   
 };

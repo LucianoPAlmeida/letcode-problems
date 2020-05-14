@@ -27,6 +27,8 @@
 		B2E43DF2246DD14A0052E025 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B2E43DF9246DD1C30052E025 /* two_sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = two_sum.h; sourceTree = "<group>"; };
 		B2E43DFA246DD6F40052E025 /* add_two_numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = add_two_numbers.h; sourceTree = "<group>"; };
+		B2E43DFB246DED0C0052E025 /* rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		B2E43DFC246DF02B0052E025 /* list_node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_node.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 				B2E43DF2246DD14A0052E025 /* main.cpp */,
 				B2E43DF9246DD1C30052E025 /* two_sum.h */,
 				B2E43DFA246DD6F40052E025 /* add_two_numbers.h */,
+				B2E43DFB246DED0C0052E025 /* rotate.h */,
+				B2E43DFC246DF02B0052E025 /* list_node.h */,
 			);
 			path = "letcode-problems";
 			sourceTree = "<group>";
