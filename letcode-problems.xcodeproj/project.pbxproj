@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		B2E43DEF246DD14A0052E025 /* letcode-problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "letcode-problems"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E43DF2246DD14A0052E025 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B2E43DF9246DD1C30052E025 /* two_sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = two_sum.h; sourceTree = "<group>"; };
+		B2E43DFA246DD6F40052E025 /* add_two_numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = add_two_numbers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				B2E43DF2246DD14A0052E025 /* main.cpp */,
+				B2E43DF9246DD1C30052E025 /* two_sum.h */,
+				B2E43DFA246DD6F40052E025 /* add_two_numbers.h */,
 			);
 			path = "letcode-problems";
 			sourceTree = "<group>";
