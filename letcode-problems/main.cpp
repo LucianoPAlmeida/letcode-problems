@@ -11,6 +11,7 @@
 #include "two_sum.h"
 #include "add_two_numbers.h"
 #include "rotate.h"
+#include "index.h"
 
 void twoSum() {
   auto result = TwoSum::twoSum({2, 7, 11, 15}, 9);
@@ -58,6 +59,7 @@ void rotate(std::vector<int> &nums, int k) {
   }
   std::cout << std::endl;
 }
+
 void rotate() {
   std::vector<int> v = {1,2,3,4,5,6,7};
   std::vector<int> v1 = {-1,-100,3,99};
@@ -72,14 +74,28 @@ void rotate() {
 
 }
 
+void searchInsert() {
+  std::vector<int> v = {1,3,4,5,6,7, 9, 10};
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 5) << std::endl;
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 3) << std::endl;
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 1) << std::endl;
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 7) << std::endl;
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 9) << std::endl;
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 8) << std::endl;
+  std::cout << "idx: " << SearchInsert::searchInsert(v, 2) << std::endl;
+
+}
+
 
 int main(int argc, const char * argv[]) {
   
   twoSum();
-  
+
   addTwoNumbers();
-  
+
   rotate();
+  
+  searchInsert();
   
   return 0;
 }
