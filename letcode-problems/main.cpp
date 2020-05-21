@@ -13,6 +13,7 @@
 #include "rotate.h"
 #include "index.h"
 #include "revert_int.h"
+#include "valid_parens.h"
 
 void twoSum() {
   auto result = TwoSum::twoSum({2, 7, 11, 15}, 9);
@@ -94,16 +95,19 @@ void revertInt() {
 
 }
 
+void parens() {
+  
+}
 
 int main(int argc, const char * argv[]) {
   
-//  twoSum();
-//
-//  addTwoNumbers();
-//
-//  rotate();
-//  
-//  searchInsert();
+  twoSum();
+
+  addTwoNumbers();
+
+  rotate();
+  
+  searchInsert();
   
   revertInt();
   
