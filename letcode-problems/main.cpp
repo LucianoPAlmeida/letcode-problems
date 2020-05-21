@@ -12,6 +12,7 @@
 #include "add_two_numbers.h"
 #include "rotate.h"
 #include "index.h"
+#include "revert_int.h"
 
 void twoSum() {
   auto result = TwoSum::twoSum({2, 7, 11, 15}, 9);
@@ -86,16 +87,25 @@ void searchInsert() {
 
 }
 
+void revertInt() {
+  std::cout << "int: " << Int::reverse(123) << std::endl;
+  std::cout << "int: " << Int::reverse(-123) << std::endl;
+  std::cout << "int: " << Int::reverse(120) << std::endl;
+
+}
+
 
 int main(int argc, const char * argv[]) {
   
-  twoSum();
-
-  addTwoNumbers();
-
-  rotate();
+//  twoSum();
+//
+//  addTwoNumbers();
+//
+//  rotate();
+//  
+//  searchInsert();
   
-  searchInsert();
+  revertInt();
   
   return 0;
 }
