@@ -14,6 +14,7 @@
 #include "index.h"
 #include "revert_int.h"
 #include "valid_parens.h"
+#include "reverse_string.h"
 
 void twoSum() {
   auto result = TwoSum::twoSum({2, 7, 11, 15}, 9);
@@ -96,7 +97,22 @@ void revertInt() {
 }
 
 void parens() {
+  std::string s = "{}(){";
+  std::string s1 = "{}(){}";
   
+  std::cout << "Is valid: " << Parens::isValid(s) << std::endl;
+  std::cout << "Is valid: " << Parens::isValid(s1) << std::endl;
+
+}
+
+void reverseString() {
+  std::vector<char> s = {'h', 'e', 'l', 'l', 'o'};
+  ReverseStr::reverseString(s);
+  std::cout << "Reverse: ";
+  for (auto c : s) {
+    std::cout << c;
+  }
+  std::cout << std::endl;
 }
 
 int main(int argc, const char * argv[]) {
@@ -110,6 +126,10 @@ int main(int argc, const char * argv[]) {
   searchInsert();
   
   revertInt();
+  
+  parens();
+  
+  reverseString();
   
   return 0;
 }
