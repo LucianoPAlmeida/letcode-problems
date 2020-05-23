@@ -15,6 +15,7 @@
 #include "revert_int.h"
 #include "valid_parens.h"
 #include "reverse_string.h"
+#include "range.h"
 
 void twoSum() {
   auto result = TwoSum::twoSum({2, 7, 11, 15}, 9);
@@ -105,6 +106,16 @@ void parens() {
 
 }
 
+void range() {
+  std::vector<int> v = {2, 2};
+  std::vector<int> v1 = {1,3,4,5,6,6,6,7, 9, 10};
+  
+  auto result = Range::searchRange(v, 2);
+  std::cout << "lowerBound: " << result[0] << ", upperBound: " << result[1] << std::endl;
+  auto result1 = Range::searchRange(v1, 6);
+  std::cout << "lowerBound: " << result1[0] << ", upperBound: " << result1[1] << std::endl;
+}
+
 void reverseString() {
   std::vector<char> s = {'h', 'e', 'l', 'l', 'o'};
   ReverseStr::reverseString(s);
@@ -116,20 +127,22 @@ void reverseString() {
 }
 
 int main(int argc, const char * argv[]) {
-  
+
   twoSum();
 
   addTwoNumbers();
 
   rotate();
-  
+
   searchInsert();
-  
+
   revertInt();
-  
+
   parens();
-  
+
   reverseString();
+  
+  range();
   
   return 0;
 }

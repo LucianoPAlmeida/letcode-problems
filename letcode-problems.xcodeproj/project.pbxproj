@@ -26,6 +26,7 @@
 		B21ACB5D24772DAC0034DF5A /* revert_int.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = revert_int.h; sourceTree = "<group>"; };
 		B21ACB5E24773DDF0034DF5A /* valid_parens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = valid_parens.h; sourceTree = "<group>"; };
 		B24862DD2478A43600A6136A /* reverse_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverse_string.h; sourceTree = "<group>"; };
+		B2CA1F7F2478A72100B6D26D /* range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
 		B2CEAA1E24749DA6008F2CAF /* index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
 		B2CEAA1F2475CEFC008F2CAF /* divide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = divide.h; sourceTree = "<group>"; };
 		B2E43DEF246DD14A0052E025 /* letcode-problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "letcode-problems"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +77,7 @@
 				B21ACB5D24772DAC0034DF5A /* revert_int.h */,
 				B21ACB5E24773DDF0034DF5A /* valid_parens.h */,
 				B24862DD2478A43600A6136A /* reverse_string.h */,
+				B2CA1F7F2478A72100B6D26D /* range.h */,
 			);
 			path = "letcode-problems";
 			sourceTree = "<group>";
