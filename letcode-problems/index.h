@@ -6,8 +6,8 @@
 //  Copyright © 2020 Luciano Almeida. All rights reserved.
 //
 
-#ifndef median_h
-#define median_h
+#ifndef index_h
+#define index_h
 
 #include <iostream>
 #include <vector>

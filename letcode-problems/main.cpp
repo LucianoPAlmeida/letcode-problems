@@ -17,6 +17,7 @@
 #include "reverse_string.h"
 #include "range.h"
 #include "dup_sorted.h"
+#include "median.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
@@ -141,6 +142,12 @@ void dupSorted() {
   dump(v1);
 }
 
+void median() {
+  std::vector<int> v1 = {1,2};
+  std::vector<int> v2 = {3, 4};
+  std::cout << "Median: " << Median::findMedianSortedArrays(v1, v2) << std::endl;
+}
+
 
 int main(int argc, const char * argv[]) {
 
@@ -161,6 +168,8 @@ int main(int argc, const char * argv[]) {
   range();
   
   dupSorted();
+  
+  median();
   
   return 0;
 }
