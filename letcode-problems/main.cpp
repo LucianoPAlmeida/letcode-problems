@@ -16,6 +16,15 @@
 #include "valid_parens.h"
 #include "reverse_string.h"
 #include "range.h"
+#include "dup_sorted.h"
+
+template <typename T>
+void dump(std::vector<T> &v) {
+  for (auto e : v) {
+    std::cout << e;
+  }
+  std::cout << std::endl;
+}
 
 void twoSum() {
   auto result = TwoSum::twoSum({2, 7, 11, 15}, 9);
@@ -126,6 +135,13 @@ void reverseString() {
   std::cout << std::endl;
 }
 
+void dupSorted() {
+  std::vector<int> v1 = {1,3,4,5,6,6,6,7, 9, 10};
+  DupSorted::removeDuplicates(v1);
+  dump(v1);
+}
+
+
 int main(int argc, const char * argv[]) {
 
   twoSum();
@@ -143,6 +159,8 @@ int main(int argc, const char * argv[]) {
   reverseString();
   
   range();
+  
+  dupSorted();
   
   return 0;
 }

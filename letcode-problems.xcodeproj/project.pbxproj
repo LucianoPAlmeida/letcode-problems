@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B21ACB5D24772DAC0034DF5A /* revert_int.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = revert_int.h; sourceTree = "<group>"; };
 		B21ACB5E24773DDF0034DF5A /* valid_parens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = valid_parens.h; sourceTree = "<group>"; };
+		B23EF8EF247BD6D3007F0BF2 /* dup_sorted.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dup_sorted.h; sourceTree = "<group>"; };
 		B24862DD2478A43600A6136A /* reverse_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverse_string.h; sourceTree = "<group>"; };
 		B2CA1F7F2478A72100B6D26D /* range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
 		B2CEAA1E24749DA6008F2CAF /* index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 				B21ACB5E24773DDF0034DF5A /* valid_parens.h */,
 				B24862DD2478A43600A6136A /* reverse_string.h */,
 				B2CA1F7F2478A72100B6D26D /* range.h */,
+				B23EF8EF247BD6D3007F0BF2 /* dup_sorted.h */,
 			);
 			path = "letcode-problems";
 			sourceTree = "<group>";
