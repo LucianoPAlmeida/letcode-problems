@@ -18,6 +18,7 @@
 #include "range.h"
 #include "dup_sorted.h"
 #include "median.h"
+#include "plus_one.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
@@ -148,6 +149,17 @@ void median() {
   std::cout << "Median: " << Median::findMedianSortedArrays(v1, v2) << std::endl;
 }
 
+void plusOne() {
+  std::vector<int> v1 = {1,2};
+  std::vector<int> v2 = {9};
+  
+  auto v1r = PlusOne::plusOne(v1);
+  auto v2r = PlusOne::plusOne(v2);
+
+  dump(v1r);
+  dump(v2r);
+}
+
 
 int main(int argc, const char * argv[]) {
 
@@ -170,6 +182,8 @@ int main(int argc, const char * argv[]) {
   dupSorted();
   
   median();
+  
+  plusOne();
   
   return 0;
 }
