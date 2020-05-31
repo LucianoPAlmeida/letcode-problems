@@ -38,6 +38,7 @@
 		B2E43DFB246DED0C0052E025 /* rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
 		B2E43DFC246DF02B0052E025 /* list_node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_node.h; sourceTree = "<group>"; };
 		B2EF1AC52484470600EB73D3 /* plus_one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plus_one.h; sourceTree = "<group>"; };
+		B2EF1AC624845E8300EB73D3 /* rotated_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotated_list.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 				B23EF8EF247BD6D3007F0BF2 /* dup_sorted.h */,
 				B23EF8F0247C2DF0007F0BF2 /* median.h */,
 				B2EF1AC52484470600EB73D3 /* plus_one.h */,
+				B2EF1AC624845E8300EB73D3 /* rotated_list.h */,
 			);
 			path = "letcode-problems";
 			sourceTree = "<group>";
