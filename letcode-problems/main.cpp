@@ -21,6 +21,7 @@
 #include "plus_one.h"
 #include "rotated_list.h"
 #include "reverse_list.h"
+#include "remove_nth.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
