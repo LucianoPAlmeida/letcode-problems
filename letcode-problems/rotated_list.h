@@ -16,33 +16,33 @@
 
 class RotateListNode {
 public:
-    ListNode* rotateRight(ListNode* head, int k) {
-        if (k == 0)
-            return head;
-        
-        auto node = head;
-        
-        std::vector<ListNode*> indexed;
-        while (node) {
-            indexed.push_back(node);
-            node = node->next;
-        }
-        
-        if (indexed.size() <= 1) return head;
-        
-        k = k%indexed.size();
-        
-        if (k == 0)
-            return head;
-        
-        auto root = indexed[indexed.size() - k];
-        auto last = indexed.back();
-        auto newLast = indexed[indexed.size() - k - 1];
-        newLast->next = nullptr;
-        last->next = head;
-        
-        return root;
+  ListNode* rotateRight(ListNode* head, int k) {
+    if (k == 0)
+      return head;
+    
+    auto node = head;
+    
+    std::vector<ListNode*> indexed;
+    while (node) {
+      indexed.push_back(node);
+      node = node->next;
     }
+    
+    if (indexed.size() <= 1) return head;
+    
+    k = k%indexed.size();
+    
+    if (k == 0)
+      return head;
+    
+    auto root = indexed[indexed.size() - k];
+    auto last = indexed.back();
+    auto newLast = indexed[indexed.size() - k - 1];
+    newLast->next = nullptr;
+    last->next = head;
+    
+    return root;
+  }
 };
 
 #endif /* rotated_list_h */
