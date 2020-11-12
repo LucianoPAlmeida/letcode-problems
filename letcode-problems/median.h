@@ -14,8 +14,8 @@
 
 class Median {
 private:
-  static unsigned int searchInsert(vector<int>& nums, unsigned int start, unsigned int end, int value) {
-    unsigned int i = end - start;
+  static size_t searchInsert(vector<int>& nums, size_t start, size_t end, int value) {
+    size_t i = end - start;
     if (i <= 1)
       return start + i;
     
@@ -30,7 +30,7 @@ private:
       return start + i;
     }
   }
-  static unsigned int searchInsert(vector<int>& nums, int target) {
+  static size_t searchInsert(vector<int>& nums, int target) {
     if (target <= nums.front())
       return 0;
     if (target > nums.back())
@@ -46,7 +46,7 @@ private:
   static double median(vector<int>& nums1, vector<int>& nums2) {
     if (!nums2.empty()) {
       for (unsigned int i = 0; i < nums2.size(); i++) {
-        unsigned int idx = searchInsert(nums1, nums2[i]);
+        size_t idx = searchInsert(nums1, nums2[i]);
         nums1.insert(nums1.begin() + idx, nums2[i]);
       }
     }

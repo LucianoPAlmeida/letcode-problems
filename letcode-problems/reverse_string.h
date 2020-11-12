@@ -18,8 +18,8 @@ public:
         if (s.size() <= 1)
             return;
         
-        for (unsigned i = 0; i < s.size()/2; i++) {
-            unsigned tail = s.size() - i - 1;
+        for (size_t i = 0; i < s.size()/2; i++) {
+            size_t tail = s.size() - i - 1;
             auto c = s[tail];
             s[tail] = s[i];
             s[i] = c;
