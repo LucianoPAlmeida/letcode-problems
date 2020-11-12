@@ -22,11 +22,12 @@
 #include "rotated_list.h"
 #include "reverse_list.h"
 #include "remove_nth.h"
+#include "zeroes.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
   for (auto e : v) {
-    std::cout << e;
+    std::cout << e << ", ";
   }
   std::cout << std::endl;
 }
@@ -163,6 +164,33 @@ void plusOne() {
   dump(v2r);
 }
 
+void zeroes() {
+  std::vector<int> v1 = {1,2,0};
+  std::vector<int> v2 = {9};
+  std::vector<int> v3 = {0, 0, 0, 0};
+  std::vector<int> v4 = {0};
+  std::vector<int> v5 = {0, 0, 4, 0};
+  std::vector<int> v6 = {0,1,0,3,12};
+  std::vector<int> v7 = {0,1};
+
+  Zeroes::moveZeroes(v1);
+  Zeroes::moveZeroes(v2);
+  Zeroes::moveZeroes(v3);
+  Zeroes::moveZeroes(v4);
+  Zeroes::moveZeroes(v5);
+  Zeroes::moveZeroes(v6);
+  Zeroes::moveZeroes(v7);
+
+  dump(v1);
+  dump(v2);
+  dump(v3);
+  dump(v4);
+  dump(v5);
+  dump(v6);
+  dump(v7);
+
+}
+
 
 int main(int argc, const char * argv[]) {
 
@@ -179,14 +207,16 @@ int main(int argc, const char * argv[]) {
   parens();
 
   reverseString();
-  
+
   range();
-  
+
   dupSorted();
-  
+
   median();
-  
+
   plusOne();
+  
+  zeroes();
   
   return 0;
 }
