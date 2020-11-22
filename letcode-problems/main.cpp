@@ -27,6 +27,7 @@
 #include "zeroes.h"
 #include "num_of_bits.h"
 #include "missing_number.h"
+#include "reverse_bits.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
@@ -201,7 +202,6 @@ void numOfOneBits() {
   std::cout << "2 : " << OneBits::hammingWeight(2) << std::endl;
   std::cout << "3 : " << OneBits::hammingWeight(3) << std::endl;
   std::cout << "5 : " << OneBits::hammingWeight(5) << std::endl;
-  std::cout << "max : " << OneBits::hammingWeight(std::numeric_limits<uint32_t>::max()) << std::endl;
 }
 
 void missingNumber() {
@@ -209,6 +209,13 @@ void missingNumber() {
   std::cout << "Missing Number: " << std::endl;
   std::cout << "r : " << MissingNumber::missingNumber(v1) << std::endl;
 }
+
+void reversingBits() {
+  std::cout << "Reverse bits: " << std::endl;
+  std::cout << "43261596 : " << ReverseBits::reverseBits(43261596) << std::endl;
+  std::cout << "4294967293 : " << ReverseBits::reverseBits(4294967293) << std::endl;
+}
+
 
 int main(int argc, const char * argv[]) {
 
@@ -240,6 +247,8 @@ int main(int argc, const char * argv[]) {
   
   missingNumber();
   
+  reversingBits();
+
   return 0;
 }
 
