@@ -205,7 +205,7 @@ void numOfOneBits() {
 }
 
 void missingNumber() {
-  std::vector<int> v1 = {1};
+  std::vector<int> v1 = {1, 2, 0};
   std::cout << "Missing Number: " << std::endl;
   std::cout << "r : " << MissingNumber::missingNumber(v1) << std::endl;
 }

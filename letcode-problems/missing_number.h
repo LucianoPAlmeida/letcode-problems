@@ -19,10 +19,11 @@ public:
         std::set<int> values(nums.begin(), nums.end());
         int missing = (int)nums.size();
         for(unsigned i = 0; i < nums.size(); i++) {
-          if (values.find((int)i) == values.end()) {
-            missing = (int)i;
-            break;
-          }
+          if (values.count((int)i))
+            continue;
+          
+          missing = (int)i;
+          break;
         }
         return missing;
     }
