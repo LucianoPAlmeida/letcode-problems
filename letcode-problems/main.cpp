@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include <vector>
+#include <numeric>
+
 #include "two_sum.h"
 #include "add_two_numbers.h"
 #include "rotate.h"
@@ -23,6 +25,7 @@
 #include "reverse_list.h"
 #include "remove_nth.h"
 #include "zeroes.h"
+#include "num_of_bits.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
@@ -191,6 +194,14 @@ void zeroes() {
 
 }
 
+void numOfOneBits() {
+  std::cout << "One bits: " << std::endl;
+  std::cout << "0 : " << OneBits::hammingWeight(0) << std::endl;
+  std::cout << "2 : " << OneBits::hammingWeight(2) << std::endl;
+  std::cout << "3 : " << OneBits::hammingWeight(3) << std::endl;
+  std::cout << "5 : " << OneBits::hammingWeight(5) << std::endl;
+  std::cout << "max : " << OneBits::hammingWeight(std::numeric_limits<uint32_t>::max()) << std::endl;
+}
 
 int main(int argc, const char * argv[]) {
 
@@ -217,6 +228,8 @@ int main(int argc, const char * argv[]) {
   plusOne();
   
   zeroes();
+  
+  numOfOneBits();
   
   return 0;
 }
