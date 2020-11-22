@@ -26,6 +26,7 @@
 #include "remove_nth.h"
 #include "zeroes.h"
 #include "num_of_bits.h"
+#include "missing_number.h"
 
 template <typename T>
 void dump(std::vector<T> &v) {
@@ -203,6 +204,12 @@ void numOfOneBits() {
   std::cout << "max : " << OneBits::hammingWeight(std::numeric_limits<uint32_t>::max()) << std::endl;
 }
 
+void missingNumber() {
+  std::vector<int> v1 = {1};
+  std::cout << "Missing Number: " << std::endl;
+  std::cout << "r : " << MissingNumber::missingNumber(v1) << std::endl;
+}
+
 int main(int argc, const char * argv[]) {
 
   twoSum();
@@ -230,6 +237,8 @@ int main(int argc, const char * argv[]) {
   zeroes();
   
   numOfOneBits();
+  
+  missingNumber();
   
   return 0;
 }

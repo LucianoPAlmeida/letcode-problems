@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B203C8262569F386009C0DAF /* num_of_bits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = num_of_bits.h; sourceTree = "<group>"; };
+		B203C828256A0257009C0DAF /* missing_number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = missing_number.h; sourceTree = "<group>"; };
 		B2138BFE255DF8B0001E67B4 /* zeroes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zeroes.h; sourceTree = "<group>"; };
 		B21ACB5D24772DAC0034DF5A /* revert_int.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = revert_int.h; sourceTree = "<group>"; };
 		B21ACB5E24773DDF0034DF5A /* valid_parens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = valid_parens.h; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 				B2EF1AC8248466C300EB73D3 /* remove_nth.h */,
 				B2138BFE255DF8B0001E67B4 /* zeroes.h */,
 				B203C8262569F386009C0DAF /* num_of_bits.h */,
+				B203C828256A0257009C0DAF /* missing_number.h */,
 			);
 			path = "letcode-problems";
 			sourceTree = "<group>";
